@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#f9aa33</color>-->
+    <color name="colorPrimaryDark">#f9aa33</color>
+    <color name="colorPrimaryDarker">#d78811</color>
+
+    <color name="grey">#20d5d1d1</color>
+    <color name="white">@android:color/white</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorAccent">#232f34</color>
+    <color name="colorAccentLight">#4a6572</color>
+
+    <color name="colorBackgroundLight">#ffffff</color>
+    <color name="colorSecondary">#151515</color>
+
+    <color name="red">#fe1a1a</color>
+
+    <color name="lightorage">#39FF9800</color>
+
+    <color name="darkpink">#f72672</color>
+    <color name="pink_hearing_ring">#f72672</color>
+
+
+    <color name="darkorange">#ff6333</color>
+    <color name="pink">#ef135b</color>
+    <color name="purple">#af0797</color>
+    <color name="black">#190905</color>
+    <color name="background_grey">#20d5d1d1</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="clean_white">@android:color/white</color>
+
+
+
+</resources>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<resources>-->
+    <!--&lt;!&ndash;    <color name="colorPrimary">#008577</color>&ndash;&gt;-->
+    <!--&lt;!&ndash;    <color name="colorPrimaryDark">#00574B</color>&ndash;&gt;-->
+    <!--&lt;!&ndash;    <color name="colorAccent">#D81B60</color>&ndash;&gt;-->
+    <!--&lt;!&ndash;    <color name="colorPrimary">#de8613</color>&ndash;&gt;-->
+    <!--&lt;!&ndash;    <color name="colorAccent">#560b21</color>&ndash;&gt;-->
+
+    <!--    -->
+    <!--    <color name="colorPrimary">#344955</color>-->
+    <!--    <color name="colorAccent">#4a6572</color>-->
+    <!--&lt;!&ndash;    <color name="colorPrimary">#6d6d6d</color>&ndash;&gt;-->
+    <!--    <color name="colorPrimaryDark">#232f34</color>-->
+    <!--&lt;!&ndash;    <color name="colorAccent">#9b9b9b</color>&ndash;&gt;-->
+    <!--    -->
+    <!--    <color name="colorSecondary">#f9aa33</color>-->
+    <!--    <color name="colorSecondaryAccent">#FABB5A</color>-->
+
+
+    <!--</resources>-->

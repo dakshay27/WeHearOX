@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="width_spacing">300dp</dimen>
+    <dimen name="botton_width">150dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">85dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_head">40sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="_100sdp">20dp</dimen>
+</resources>

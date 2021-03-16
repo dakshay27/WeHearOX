@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_features"
+        android:icon="@drawable/ic_apps_black_24dp"
+        android:title="Features"/>
+
+
+    <item
+        android:id="@+id/navigation_main"
+        android:icon="@drawable/ic_action_ear"
+        android:title="Main"/>
+
+    <item
+        android:id="@+id/navigation_albums"
+        android:icon="@drawable/ic_phi_logo"
+        android:title="Albums"/>
+
+    <item
+        android:id="@+id/navigation_artists"
+        android:icon="@drawable/ic_person"
+        android:title="Artists"/>
+</menu>

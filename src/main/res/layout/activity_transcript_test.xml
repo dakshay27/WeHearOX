@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".TranscriptTest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/radius"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_marginTop="-50dp">
+
+            <ImageView
+                android:id="@+id/backbtn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pathback"
+                android:layout_gravity="left|center_vertical" />
+            <TextView
+                android:id="@+id/oxtvv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="OX Translator"
+                android:fontFamily="@font/metropolis_medium"
+                android:textColor="@color/white"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/mic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/mic"
+                android:layout_gravity="left|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Translation of English to French"
+            android:textSize="18sp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.65"
+            android:layout_margin="20dp"
+            android:background="@drawable/custom_button2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:weightSum="5">
+
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4">
+
+                    <TextView
+                        android:id="@+id/outText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:gravity="left"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:text="Translated text output here."
+                        android:textSize="20sp"
+                        android:padding="10dp"/>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:padding="20dp"
+            android:background="@drawable/custom_button2"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mic_button_test1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:background="@drawable/custom_button2">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_microphone" />
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mic_button_test2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:background="@drawable/custom_button2"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_microphone" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!--<Button
+            android:id="@+id/mic_button"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:layout_marginTop="-80dp"
+            android:drawableStart="@drawable/ic_microphone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:background="@drawable/custom_button2"/>-->
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

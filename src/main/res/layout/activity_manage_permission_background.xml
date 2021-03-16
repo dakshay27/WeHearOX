@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagePermissionBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/radius" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-50dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/pathback" />
+
+            <TextView
+                android:id="@+id/tv_daily"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="left|center_vertical"
+                android:text="Manage Permission"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Why does WeHear app need to run in the background?"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autotext_text_size_simple"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="WeHeaar should run in the background to get your earing experince continues. Add WeHear to the exceptions if you can't update data in notification etc."
+                android:textSize="@dimen/text_size"
+                app:autoSizePresetSizes="@array/autotext_text_size_simple"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Attention:\nIf you are using a third party security app,add WeHear to its exceptions."
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:autoSizePresetSizes="@array/autotext_text_size_simple"
+                app:autoSizeTextType="uniform" />
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Spinner
+                    android:id="@+id/spn_phone_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rounded_corner_current_user"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/dropdown_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:padding="3sp"
+                android:textSize="@dimen/text_size"
+                app:autoSizePresetSizes="@array/autotext_text_size_simple"
+
+                app:autoSizeTextType="uniform" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.05"
+                android:background="@android:color/darker_gray" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="6.9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_head_autostart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="I. Autostart"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        app:autoSizePresetSizes="@array/autotext_text_size_simple"
+                        app:autoSizeTextType="uniform" />
+
+                    <TextView
+                        android:id="@+id/txt_main_autostart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_head_bettery_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="II Battery Manager"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        app:autoSizePresetSizes="@array/autotext_text_size_simple"
+                        app:autoSizeTextType="uniform" />
+
+                    <TextView
+                        android:id="@+id/txt_main_bettery_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_head_lock_the_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="III Lock the app"
+                        android:textSize="@dimen/text_size"
+                        android:textStyle="bold"
+                        app:autoSizePresetSizes="@array/autotext_text_size_simple"
+                        app:autoSizeTextType="uniform" />
+
+                    <TextView
+                        android:id="@+id/txt_main_lock_the_app"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

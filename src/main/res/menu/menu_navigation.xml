@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/features"
+        android:icon="@drawable/ic_features"
+        app:showAsAction="always"
+        android:title="Features"/>
+
+    <item
+        android:id="@+id/ox"
+        android:icon="@drawable/ic_ox_icon"
+        app:showAsAction="always"
+        android:title="OX"/>
+
+    <item
+        android:id="@+id/phi"
+        android:icon="@drawable/ic_phi_new"
+        app:showAsAction="always"
+        android:title="PHI"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/new_profile"
+        app:showAsAction="always"
+        android:title="Profile"/>
+
+</menu>

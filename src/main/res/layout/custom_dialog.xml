@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="650dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_box">
+
+    <!--    android:padding="@dimen/spacing_xlarge"-->
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="650dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:background="@drawable/dialog_box">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="290dp"
+                android:layout_weight="1"
+                android:src="@drawable/cross"
+                android:padding="5dp"
+             />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_soundmeter" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:text="Sound Meter"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:fontFamily="@font/metropolis_bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/black"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.25">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/metropolis_light"
+                android:text="@string/sound_meter"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </ScrollView>
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/title"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="1"-->
+        <!--            android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+        <!--            android:textColor="@color/colorPrimaryDark"-->
+        <!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+</RelativeLayout>

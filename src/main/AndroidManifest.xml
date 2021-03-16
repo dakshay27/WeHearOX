@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wehear.ox">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MICROPHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name=".WeHearApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name=".DailyData.DemoDailyDataActivity"></activity>
+        <activity android:name=".PhiSmartAlert" />
+        <activity android:name=".ProfileSettingMyWehearDetails" />
+        <activity android:name=".ProfileSetting" />
+        <activity android:name=".HearingAidTest" /> <!-- <receiver  android:name=".PhoneCallReceiver"> -->
+        <!-- <intent-filter android:priority="2147483647"> -->
+        <!-- <action android:name="android.intent.action.PHONE_STATE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".DowloadLanguage" />
+        <activity android:name=".UserWeHearsExist" />
+        <activity android:name=".ManagePermissionBackground" />
+        <activity android:name=".TranscriptTest" />
+        <activity
+            android:name=".TranslateTestActivity2"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TranslateTestActivity"
+            android:screenOrientation="nosensor" />
+        <activity android:name=".DeviceActivity" />
+        <activity android:name=".RegisteredDeviceActivity" />
+        <activity android:name=".AnimationActivity" />
+        <activity android:name=".TempActivity" />
+        <activity android:name=".FriendsActivity" />
+        <activity
+            android:name=".SoundMeterActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ConversationMode"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name=".HearingAidService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".DailyDataAnalysisActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".phiActivity"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name=".MinuteUsedService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":ForegroundService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".ShareActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/TextInputLayout" />
+
+        <service
+            android:name=".ForegroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".TimerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".NotificationActionReceiver">
+            <intent-filter>
+                <action android:name="CANCEL" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".TimerCountDownActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".EqActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".TimerActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".HearingAidActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".TranslateActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".EqualizerActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".AvailableDevicesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".UserInfoActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".EmailLogInActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".CodeVerification"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".PhoneCallReceiver$Receiver" />
+        <activity
+            android:name=".FeaturesActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppFullScreenTheme" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="nosensor"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="nosensor"></activity>
+
+        <receiver
+            android:name=".TranslateActivity$CatchEvent"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".TranslateTestActivity2$ButtonCheck"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".ConversationMode$CatchEvent"
+            android:enabled="true">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

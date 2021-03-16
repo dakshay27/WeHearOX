@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".TranslateTestActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/radius" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-50dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backbtn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/pathback" />
+
+            <TextView
+                android:id="@+id/oxtvv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="left|center_vertical"
+                android:text="OX Translator"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_hand_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/baseline_pan_tool_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25" />
+
+        <TextView
+            android:id="@+id/tv_translator_languages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Translation of English to French"
+            android:textSize="18sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            android:layout_weight="6.65"
+            android:background="@drawable/custom_button2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <ImageView
+                    android:id="@+id/img_speaks_one_more"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_volume_up_black_24dp" />
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4">
+
+                    <TextView
+                        android:id="@+id/outText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="top"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:gravity="left"
+                        android:padding="10dp"
+                        android:text="Translated text output here."
+                        android:textSize="20sp" />
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:background="@drawable/custom_button2"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/mic_button_test"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_button2"
+                android:gravity="center"
+                android:paddingLeft="40dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_microphone" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!--<Button
+            android:id="@+id/mic_button"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.65"
+            android:layout_marginTop="-80dp"
+            android:drawableStart="@drawable/ic_microphone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:background="@drawable/custom_button2"/>-->
+
+
+        <TextView
+            android:id="@+id/tv_press_button_speak"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="5sp"
+            android:text="Press button to Speak"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

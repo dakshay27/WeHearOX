@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".ShareActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:weightSum="13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.6"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/radius" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-50dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_back6"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/pathback" />
+
+            <TextView
+                android:id="@+id/tv_ox"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/metropolis_medium"
+                android:gravity="left|center_vertical"
+                android:text="Refer &amp; Earn"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/img_rinfo"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/info" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"></LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.75">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/network_man" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="-20dp"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/etlayout_custom_end_icon"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="300dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="12dp"
+                            android:layout_weight="1"
+                            android:hint="Referral Code"
+                            android:textColor="?attr/colorSecondary"
+                            app:endIconDrawable="@drawable/copy"
+                            app:endIconMode="custom"
+                            app:hintTextColor="?attr/colorSecondary">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_referCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:editable="false"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/btn_material_icon"
+                            android:layout_width="150dp"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.75"
+                            android:background="@drawable/share_button"
+                            android:fontFamily="@font/metropolis_regular"
+                            android:gravity="center"
+                            android:text="SHARE"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-280dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/img_woman"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="1.25"
+                android:background="@drawable/women" />
+
+            <!--<ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>-->
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:fontFamily="@font/metropolis_regular"
+            android:gravity="center"
+            android:text="Your Referrals"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.8"
+            android:background="#f5f5f5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:background="#f5f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.5"
+                    android:background="#f5f5f5"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:padding="32dp"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:elevation="2dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:outlineProvider="bounds"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tv_noOfReferral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="right"
+                                android:text="--"
+                                android:textColor="@color/black"
+                                android:textSize="32sp" />
+
+                            <TextView
+                                android:id="@+id/tv_referral"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="left"
+                                android:text="Number \nof Referrals"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center|top"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:padding="32dp"
+                        app:cardCornerRadius="22dp"
+                        app:cardElevation="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:elevation="2dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:outlineProvider="bounds"
+                            android:weightSum="4">
+
+                            <TextView
+                                android:id="@+id/tv_noofcredits"
+                                android:layout_width="152dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="10dp"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="right"
+                                android:text="--"
+                                android:textColor="@color/black"
+                                android:textSize="32sp" />
+
+                            <TextView
+                                android:id="@+id/tv_credits"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10sp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/metropolis_regular"
+                                android:gravity="left"
+                                android:text="OX Credit\nCollected INR"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"></LinearLayout>
+
+        <Button
+            android:id="@+id/btn_redeem"
+            style="@style/ButtonStyle123"
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.75"
+            android:background="@drawable/buttongradient"
+            android:fontFamily="@font/metropolis_medium"
+            android:gravity="center"
+            android:text="REDEEM NOW"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

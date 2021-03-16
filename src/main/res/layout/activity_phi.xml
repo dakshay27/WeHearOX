@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phiActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:weightSum="7.7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:text="What is PHI?"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/img_phi_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/info"
+                    android:tint="@color/black_overlay" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.75">
+
+                <TextView
+                    android:id="@+id/txt_inner_phi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/ic_demo1" />
+
+                <TextView
+                    android:id="@+id/txt_outer_phi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_demo1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/ic_phi"
+                        android:fontFamily="@font/metropolis_bold"
+                        android:text="--"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_daily_chart_phi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text=""
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/br_chart1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_weight="1.25" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.2"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:clickable="true"
+                            android:padding="32dp"
+                            app:cardBackgroundColor="@color/pink"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:id="@+id/tv_earAge_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="3"
+                                    android:fontFamily="@font/metropolis_regular"
+                                    android:foregroundGravity="center"
+                                    android:gravity="right"
+                                    android:padding="5dp"
+                                    android:paddingBottom="8dp"
+                                    android:text="--"
+                                    android:textAlignment="gravity"
+                                    android:textColor="@color/white"
+                                    android:textSize="35sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_earAge_textsub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="0.8"
+                                    android:gravity="left"
+                                    android:paddingBottom="8dp"
+                                    android:text="Current Ear Age"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:clickable="true"
+                            android:padding="32dp"
+                            app:cardBackgroundColor="@color/darkorange"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:id="@+id/share_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_earLossAge_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="12dp"
+                                    android:layout_weight="3"
+                                    android:fontFamily="@font/metropolis_regular"
+                                    android:foregroundGravity="center"
+                                    android:gravity="right"
+                                    android:padding="5dp"
+                                    android:paddingBottom="8dp"
+                                    android:text="--"
+                                    android:textAlignment="gravity"
+                                    android:textColor="@color/white"
+                                    android:textSize="35sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_earLossAge_textsub"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="0.8"
+                                    android:gravity="left|bottom"
+                                    android:paddingBottom="8dp"
+                                    android:text="Hearing Loss Age"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.2"
+                    android:background="#f5f5f5"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardViewdaily"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:background="@color/darkorange"
+                            android:clickable="true"
+                            android:elevation="10dp"
+                            android:padding="32dp"
+                            app:cardBackgroundColor="@color/purple"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:id="@+id/card_dda"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:clickable="true"
+                                android:orientation="vertical"
+                                android:weightSum="4">
+
+                                <ImageView
+                                    android:id="@+id/img_pref_button"
+                                    android:layout_width="60dp"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginRight="15dp"
+                                    android:layout_weight="2"
+                                    android:cropToPadding="true"
+                                    android:paddingTop="10dp"
+                                    app:srcCompat="@drawable/ic_pattern" />
+
+                                <TextView
+                                    android:id="@+id/tv_dailyHearingPattern_Text"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_gravity="left|center"
+                                    android:layout_marginLeft="10sp"
+                                    android:layout_weight="3"
+                                    android:gravity="left"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="8dp"
+                                    android:text="Daily Hearing \nPatterns"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1.5dp"
+                        android:layout_weight="1"
+                        android:background="#f5f5f5"
+                        android:gravity="center|top"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="2dp"
+                            android:clickable="true"
+                            android:padding="32dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:id="@+id/sm_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:orientation="vertical"
+                                    android:weightSum="3">
+
+                                    <ImageView
+                                        android:id="@+id/img_badge"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="2.5"
+                                        android:foregroundGravity="center"
+                                        android:paddingTop="10sp"
+                                        android:src="@drawable/ic_bronze_badge" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_weight="0.5"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="Your PHI Level"
+                                        android:textColor="#000"
+                                        android:textSize="15sp" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/txt_level_phi"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="top|center"
+                                    android:paddingTop="5dp"
+                                    android:text="2"
+                                    android:textColor="#000"
+                                    android:textSize="40sp" />
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="left"
+                android:text="Improve your PHI"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp">
+
+                <com.google.android.material.progressindicator.ProgressIndicator
+                    android:id="@+id/prgress_phi"
+                    style="@style/Widget.MaterialComponents.ProgressIndicator.Linear.Determinate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:max="400"
+
+                    app:growMode="outgoing"
+                    app:indicatorColor="@color/pink"
+                    app:indicatorCornerRadius="5dp"
+                    app:indicatorSize="10dp"
+                    app:trackColor="#fff" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:weightSum="12.5">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.1" />
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/ic_phi_target_balck"
+                        android:text="100" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9" />
+
+                    <TextView
+                        android:id="@+id/txt_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/ic_phi_target_gray"
+                        android:text="200" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.9" />
+
+                    <TextView
+                        android:id="@+id/txt_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/ic_phi_target_gray"
+                        android:text="300" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2.1" />
+                </LinearLayout>
+                <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/txt_1"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="50dp"-->
+                <!--                        android:layout_margin="10dp"-->
+                <!--                        android:background="@drawable/ic_phi_target_balck"-->
+                <!--                        android:text="100"-->
+                <!--                        app:layout_constraintHorizontal_chainStyle="spread"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="parent"-->
+                <!--                        app:layout_constraintRight_toRightOf="@id/txt_2"-->
+
+                <!--                        tools:ignore="MissingConstraints" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/txt_2"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="50dp"-->
+                <!--                        android:background="@drawable/ic_phi_target_gray"-->
+                <!--                        android:text="200"-->
+                <!--                        app:layout_constraintHorizontal_chainStyle="spread"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="@id/txt_1"-->
+                <!--                        app:layout_constraintRight_toRightOf="@id/txt_3"-->
+                <!--                        tools:ignore="MissingConstraints" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/txt_3"-->
+                <!--                        android:layout_width="50dp"-->
+                <!--                        android:layout_height="50dp"-->
+                <!--                        android:background="@drawable/ic_phi_target_gray"-->
+                <!--                        android:text="300"-->
+                <!--                        app:layout_constraintLeft_toLeftOf="@id/txt_2"-->
+                <!--                        app:layout_constraintRight_toRightOf="parent"-->
+                <!--                        tools:ignore="MissingConstraints" />-->
+
+
+                <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+                <!--                <ProgressBar-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+                <!--                    android:max="100"-->
+                <!--                    android:progress="25"-->
+                <!--                    android:progressTint="@color/pink"-->
+                <!--                    android:scaleY="20" />-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_next_target_phi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="start"
+                android:text="Next Target - 200 PHI"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_need_more_phi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="start"
+                android:text="You need 66 more PHI to reach next target Consider following suggestions to improve your PHI and ear health"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/view_pager_linear"
+                style="@style/CustomAlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="5">
+                        <!--                    <RelativeLayout-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="0dp"-->
+                        <!--                        android:layout_weight="5">-->
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/view_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="4" />
+
+                        <!--                    </RelativeLayout>-->
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/tab_layout_phi"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            app:tabBackground="@drawable/tab_selector"
+                            app:tabGravity="center"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMaxWidth="10dp" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:text="Hearing Patterns Suggestions"
+                            android:textSize="18dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@android:color/transparent"
+                                android:gravity="left"
+                                android:padding="5dp"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:text="Daily hearing data"
+                                    android:textColor="@color/pink"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:text="Target"
+                                    android:textColor="@color/pink"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:text="Current"
+                                    android:textColor="@color/pink"
+                                    android:textSize="18dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/custom_roud_gray_border"
+
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.2"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="Minutes used\nwith WeHear Ox"
+
+                                    android:textSize="15dp" />
+
+                                <View
+                                    android:layout_width="4px"
+                                    android:layout_height="match_parent"
+                                    android:background="#878484" />
+
+                                <TextView
+                                    android:id="@+id/txt_minute_used_target"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="140"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_minute_used_current"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="195"
+
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/custom_roud_gray_border"
+
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.2"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="Minutes used\nwith other device"
+
+                                    android:textSize="15dp" />
+
+                                <View
+                                    android:layout_width="4px"
+                                    android:layout_height="match_parent"
+                                    android:background="#878484" />
+
+                                <TextView
+                                    android:id="@+id/txt_minute_used_without_target"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="140"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_minute_used_without_current"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="195"
+
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/custom_roud_gray_border"
+
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.2"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="Average Audio\nsession time"
+
+                                    android:textSize="15dp" />
+
+                                <View
+                                    android:layout_width="4px"
+                                    android:layout_height="match_parent"
+                                    android:background="#878484" />
+
+                                <TextView
+                                    android:id="@+id/txt_avg_session_time_target"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="140"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_avg_session_time_current"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="195"
+
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/custom_roud_gray_border"
+
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.2"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="Average Audio\namplitude"
+
+                                    android:textSize="15dp" />
+
+                                <View
+                                    android:layout_width="4px"
+                                    android:layout_height="match_parent"
+                                    android:background="#878484" />
+
+                                <TextView
+                                    android:id="@+id/txt_avg_ampptitude_target"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="140"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_avg_ampptitude_current"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="195"
+
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/custom_roud_gray_border"
+
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.2"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="Average\nSurrounding noise"
+
+                                    android:textSize="15dp" />
+
+                                <View
+                                    android:layout_width="4px"
+                                    android:layout_height="match_parent"
+                                    android:background="#878484" />
+
+                                <TextView
+                                    android:id="@+id/txt_avg_surround_time_target"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="140"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_avg_surround_time_current"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="195"
+
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/custom_roud_gray_border"
+
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.2"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="Daily PHI"
+
+                                    android:textSize="15dp" />
+
+                                <View
+                                    android:layout_width="4px"
+                                    android:layout_height="match_parent"
+                                    android:background="#878484" />
+
+                                <TextView
+                                    android:id="@+id/txt_daily_phi_target"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="140"
+                                    android:textSize="15dp" />
+
+                                <TextView
+                                    android:id="@+id/txt_daily_phi_current"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.4"
+                                    android:padding="5dp"
+                                    android:text="195"
+
+                                    android:textSize="15dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear_q_a_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Q&amp;A"
+                            android:textColor="@color/pink"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="left|center_vertical"
+                            android:text="All you need to know about PHI is here."
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

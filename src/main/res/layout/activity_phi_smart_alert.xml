@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:orientation="vertical"
+    tools:context=".PhiSmartAlert">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:background="@color/grey"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:weightSum="12">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/radius" />
+
+            </LinearLayout>
+            <!--0.5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:layout_marginTop="-50dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/btn_back5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:src="@drawable/pathback" />
+
+                <TextView
+                    android:id="@+id/tv_ox"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginStart="20dp"
+
+                    android:fontFamily="@font/metropolis_medium"
+                    android:gravity="left|center_vertical"
+                    android:text="PHI Alert Screen"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+            <!--0.25-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="10.5"
+                android:background="@color/grey"
+                android:gravity="top"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rounded_corner_current_user_gray"
+                            android:orientation="horizontal"
+                            android:padding="15dp"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:gravity="left|center"
+                                android:padding="5dp"
+                                android:text="Smart alert based on PHI" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_main_phi_alert"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:padding="5dp"
+                                android:textOff=" "
+                                android:textOn=" "
+                                android:textSize="20dp"
+                                android:thumb="@drawable/customize_switch_1"
+                                app:showText="true"
+                                app:track="@drawable/customize_switch_2" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Customize Alerts"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/linear_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_current_user_gray"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Audio Usage alerts" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_usage_alert"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:padding="5dp"
+
+
+                                    android:textOff=" "
+                                    android:textOn=" "
+                                    android:textSize="20dp"
+                                    android:thumb="@drawable/customize_switch_1"
+                                    app:showText="true"
+                                    app:track="@drawable/customize_switch_2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_usage_with"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Wehear OX used for more" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_usage_with_device"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_usage_with_out"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Other devices used for" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_usage_with_out_device"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_session"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_current_user_gray"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Session Time Alerts" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_session_time"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:padding="5dp"
+                                    android:textOff=" "
+                                    android:textOn=" "
+                                    android:textSize="20dp"
+                                    android:thumb="@drawable/customize_switch_1"
+                                    app:showText="true"
+                                    app:track="@drawable/customize_switch_2" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+
+                                android:id="@+id/linear_session_spn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Current Audio session time" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_session_time"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_volumn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_current_user_gray"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Volumn alerts" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_volumn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:padding="5dp"
+                                    android:textOff=" "
+                                    android:textOn=" "
+                                    android:textSize="20dp"
+                                    android:thumb="@drawable/customize_switch_1"
+                                    app:showText="true"
+                                    app:track="@drawable/customize_switch_2" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/layout_volumn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Alert on continuous volumn" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_volumn_device"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_surround_noise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        app:cardCornerRadius="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner_current_user_gray"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Surrounding enviroment alerts" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_surrond_noice"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:padding="5dp"
+                                    android:textOff=" "
+                                    android:textOn=" "
+                                    android:textSize="20dp"
+                                    android:thumb="@drawable/customize_switch_1"
+                                    app:showText="true"
+                                    app:track="@drawable/customize_switch_2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_env_75"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Continious Noise More than 75 db for" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_75dp_noise_device"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_env_80"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Continious Noise More than 80 db for" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_80dp_noise_device"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/layout_env_85"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Continious Noise More than 85 db for" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:id="@+id/spn_85dp_noise_device"
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <!--just for convinice it is invisible-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Surrounding enviroment alerts" />
+
+                                <androidx.appcompat.widget.SwitchCompat
+                                    android:id="@+id/switch_surrond_enviroment"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="2"
+                                    android:padding="5dp"
+                                    android:textOff=" "
+                                    android:textOn=" "
+                                    android:textSize="20dp"
+                                    android:thumb="@drawable/customize_switch_1"
+                                    app:showText="true"
+                                    app:track="@drawable/customize_switch_2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="left|center"
+                                    android:padding="5dp"
+                                    android:text="Continious Noise More than" />
+
+                                <RelativeLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="2"
+                                    android:gravity="end">
+
+                                    <Spinner
+                                        android:layout_width="100dp"
+                                        android:layout_height="40dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/rounded_corner_current_user_gray"
+                                        android:spinnerMode="dropdown" />
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="5dp"
+                                        android:src="@drawable/dropdown_icon" />
+                                </RelativeLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

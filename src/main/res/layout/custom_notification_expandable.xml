@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_expanable_linear"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:layout_margin="0dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txt_total_today_use_expanable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Today's use is 3h 48m"
+                android:textColor="@color/colorSecondary"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_connect_or_not"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="WeHear OX is connected"
+                android:textColor="@color/colorSecondary"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ear_logo_colourful" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usage With \nWeHear OX"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_total_use_with_ox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1h 3m"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usage WithOut \nWeHearOx"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_total_use_with_out_ox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2h 6m"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="19sp"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current \nPHI"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_current_phi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="188"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="19sp"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Average \nVolume"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_avg_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="75"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="19sp"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Average \nSession Time"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_avg_session_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="28m"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Surrounding \nNoise"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_surround_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="53db"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="19sp"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

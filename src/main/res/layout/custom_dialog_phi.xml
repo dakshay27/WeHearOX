@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="620dp"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_box">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_box"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="0.2"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/btn_cancel2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/cross" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_phi"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.1"
+            android:src="@drawable/ic_phi_new" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/img_line1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:src="@drawable/pink_line" />
+
+            <TextView
+                android:id="@+id/tv_title1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/metropolis_light"
+                android:gravity="center"
+                android:text="What is PHI"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/pink"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_line2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:src="@drawable/pink_line" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_desc1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/spacing_middle"
+            android:layout_marginEnd="20dp"
+
+            android:layout_weight="1.55"
+            android:fontFamily="@font/metropolis_light"
+            android:gravity="top"
+            android:text="@string/phi_para1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_desc2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_weight="1.5"
+            android:fontFamily="@font/metropolis_light"
+            android:gravity="top"
+            android:text="@string/phi_para2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/img_line3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:src="@drawable/pink_line" />
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/metropolis_light"
+                android:gravity="center"
+                android:text="How it Works?"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@color/pink"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_line4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_weight="2"
+                android:src="@drawable/pink_line" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1.55"
+            android:fontFamily="@font/metropolis_light"
+            android:gravity="top"
+            android:text="@string/phi_para3"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_desc4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/metropolis_medium"
+            android:gravity="top"
+            android:text="@string/phi_para4"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal"
+
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/tv_manage_permission"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/buttongradient"
+            android:text="MANAGE PERMISSIONS"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

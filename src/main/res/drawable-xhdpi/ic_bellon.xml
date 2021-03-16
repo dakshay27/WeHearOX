@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="53.22dp"
+    android:height="50dp"
+    android:viewportWidth="53.22"
+    android:viewportHeight="50">
+  <path
+      android:pathData="M26.5,50a5.63,5.63 0,0 1,-4.84 -8.5,3.13 3.13,0 0,1 4.28,-1.09 3,3 0,0 1,0.53 0.4A2.93,2.93 0,0 1,27 40.4a3.12,3.12 0,0 1,4.3 1A5.63,5.63 0,0 1,26.5 50Z"
+      android:fillColor="@color/black_overlay"/>
+  <path
+      android:pathData="M48.23,44.46a2.51,2.51 0,0 1,-1.9 -0.87c-4.06,-4.76 -6.11,-11.08 -6.11,-18.79V19.51c0,-8 -6.15,-14.52 -13.71,-14.52a13.24,13.24 0,0 0,-9.89 4.47A2.5,2.5 0,1 1,12.74 6.3a1.62,1.62 0,0 1,0.18 -0.19A18.13,18.13 0,0 1,26.51 0c10.31,0 18.7,8.75 18.7,19.51V24.8c0,6.49 1.66,11.72 4.92,15.55a2.49,2.49 0,0 1,-1.9 4.11Z"
+      android:fillColor="@color/black_overlay"/>
+  <path
+      android:pathData="M48.23,44.47H4.78a2.51,2.51 0,0 1,-1.9 -4.12c3.27,-3.82 4.92,-9 4.92,-15.54V19.52a20.24,20.24 0,0 1,1.36 -7.3A2.5,2.5 0,0 1,13.81 14a15.19,15.19 0,0 0,-1 5.5v5.29A30.71,30.71 0,0 1,9.49 39.47H48.23a2.5,2.5 0,1 1,0.22 5h-0.22Z"
+      android:fillColor="@color/black_overlay"/>
+  <path
+      android:pathData="M2.5,18.74H2.23A2.51,2.51 0,0 1,0 16C0.8,8.67 5.61,1.78 5.81,1.49A2.5,2.5 0,0 1,9.9 4.36C9.85,4.42 5.63,10.51 5,16.52A2.5,2.5 0,0 1,2.5 18.74Z"
+      android:fillColor="@color/black_overlay"/>
+  <path
+      android:pathData="M50.72,18.55a2.48,2.48 0,0 1,-2.43 -2c0,-0.07 -1.66,-7.3 -5.65,-11.83a2.5,2.5 0,0 1,3.75 -3.3c4.86,5.52 6.7,13.72 6.77,14.06a2.5,2.5 0,0 1,-1.9 3A2,2 0,0 1,50.72 18.55Z"
+      android:fillColor="@color/black_overlay"/>
+</vector>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">WeHear OX</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="forgot_password">Forget Password?</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="otp_has_been_sent_to_you_on_your_mobile_phone_please_enter_it_below">OTP has been sent to you on your mobile phone. Please enter it below</string>
+    <string name="logo">logo</string>
+    <string name="save_information">Save Information</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="hearing_aid">Hearing aid mode uses the mic of your device to capture sound from your surrounding and plays it back to the device. You can use this as hearing aid for physical ear hearing losses.</string>
+    <string name="GOT_IT">GOT IT!</string>
+    <string name="NEXT">NEXT</string>
+    <string name="sound_meter">This feature measures the ambient sound levels in your environment using the microphone and duration of exposure. When it detects that the decibel level has risen to a point where hearing could be affected, it can notify you with a tap on WeHear OX device and mobile app both.\n\nAllow constant monitoring and get benefits of realtime noise assistant (This uses the micro-phone in the background for 2 seconds each minute just to measure noise each minute). Each minute\'s data is also used for the PHI Calculation. Importantly it notifies you when your ears are exposed to loud sounds of a certain period of time.\n\n This feature uses the microphone to sample and measure the sound levels in your environment. WeHear OX doesn\'t record or save any sounds to measure these levels. </string>
+    <string name="phi_para1">Personal hearing intelligence (PHI) is a data analytics algorithm designed to provide the best-personalized hearing assistance based on the user\'s day to day hearing patters. Its state of the art machine learning algorithms calculates your current ear age and estimated hearing loss age based on changes in hearing suggestions and tips for health-friendly hearing.</string>
+    <string name="phi_para2">PHI algorithm gives a daily PHI number between -50 to 50 based on the user\'s hearing pattern data and the final PHI score is the cumulative output of the previous 7 days PHI data. The final PHI data ranges from 0 to 350 based on the hearing patterns. Higher PHI number shows more ear-health friendly hearing patterns.</string>
+    <string name="phi_para3">PHI algorithm uses the following daily data to determine hearing patterns:\n\n-Minutes used with WeHear OX.\n-Minutes used with all other devices.\n-Average audio sessions duration in minutes.\n-Average audio amplitude of our sessions.\n-Surrounding environment noise during day.\n\n.</string>
+    <string name="phi_para4">You can also monitor all these data in daily basis with bar-graphs.\n\nThis feature requires WeHear App Service to  run in the background and needs user\'s permission to monitor data.</string>
+    <string name="phi_link">https://www.wehear.in/phi/</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="translate_test">After selecting languages give your mobile to Other person. To speak press multi-function button (play/ pause button) and speak in your language. Other person will get translated text and audio from mobile. </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

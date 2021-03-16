@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_box">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_box"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/btn_cancel_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+
+                android:drawableEnd="@drawable/cross" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_desc2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/metropolis_light"
+            android:gravity="center"
+            android:text="You need registered Wehear OX Device to use this feature."
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_head"
+            android:textStyle="bold"
+            app:autoSizePresetSizes="@array/autotext_text_size_simple"
+            app:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/txt_get_your_ox"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/buttongradient"
+            android:padding="15dp"
+            android:text="Get Your WeHear Ox"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_alread_have_device"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_border"
+            android:padding="15dp"
+            android:text="I have WeHear Ox"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

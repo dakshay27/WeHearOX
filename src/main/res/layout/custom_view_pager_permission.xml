@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/top_border_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_pager_linear"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/img_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cross" />
+            </LinearLayout>
+
+            <com.wehear.ox.CustomViewPager
+                android:id="@+id/view_pager_permission"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5" />
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/layoutDots"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="0dp"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@android:color/white"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:orientation="horizontal" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/btn_next_permission"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttongradient"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="Confirm"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_gravity="left"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:gravity="left">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:id="@+id/img_pre_permission"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="left"-->
+                <!--                            android:src="@drawable/ic_baseline_arrow_back_ios_24"-->
+                <!--                            android:tint="@color/pink" />-->
+                <!--                    </LinearLayout>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_gravity="right"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:gravity="right">-->
+
+                <!--                        <ImageView-->
+                <!--                            android:id="@+id/img_next_permission"-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="wrap_content"-->
+                <!--                            android:layout_gravity="left"-->
+                <!--                            android:src="@drawable/ic_baseline_arrow_forward_ios_24"-->
+                <!--                            android:tint="@color/pink" />-->
+                <!--                    </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

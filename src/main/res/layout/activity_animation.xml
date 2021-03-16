@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="0dp"
+    android:visibility="visible"
+    tools:context=".AnimationActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bluetooth_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bluetooth_screen_3" />
+
+        <TextView
+            android:id="@+id/tv_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="@+id/img_bluetooth_screen"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="@font/metropolis_medium"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="@+id/img_bluetooth_screen"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/metropolis_medium"
+            android:text="Searching for your OX"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</FrameLayout>

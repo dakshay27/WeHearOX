@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.wehear.ox"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 214
+        versionName "3.1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+//
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'jp.kshoji:audio-router:0.0.1-SNAPSHOT:@aar'
+    //Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.3.0'
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.android.gms:play-services-auth:18.0.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+
+
+    //Material Design
+    implementation 'com.google.android.material:material:1.1.0-alpha10'
+    implementation 'com.google.android.material:material:1.0.0-beta01'
+    implementation 'com.android.support:design:28.0.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation files('libs\\zello-sdk.jar')
+    implementation 'com.google.firebase:firebase-functions:19.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.shawnlin:number-picker:2.4.11'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+
+
+    //Ucrop
+    implementation 'com.github.yalantis:ucrop:2.2.4'
+
+    //circular ImageView
+    implementation 'com.mikhaellopez:circularimageview:4.1.0'
+
+    //SwipeRefreshLayout
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
+    implementation 'com.github.Triggertrap:SeekArc:v1.1'
+
+    //Equalizer
+    implementation 'com.github.bullheadandplato:AndroidEqualizer:2.1'
+
+    //CircularSeekBar
+    implementation 'me.tankery.lib:circularSeekBar:1.2.0'
+
+    implementation 'com.github.ceryle:SegmentedButton:v2.0.2'
+
+    implementation 'me.itangqi.waveloadingview:library:0.3.5'
+    //implementation 'com.google.cloud:google-cloud-speech:1.22.2'
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'in.unicodelabs.sorbh:kdgaugeview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.bugfender.sdk:android:3.0.6'
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+    implementation 'com.google.mlkit:translate:16.1.1'
+
+    def room_version = "2.2.5"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // optional - RxJava support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation "androidx.room:room-guava:$room_version"
+
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+
+    //Seekbar
+//    implementation 'com.github.warkiz.widget:indicatorseekbar:2.1.2'
+    implementation "com.github.StephenVinouze:MaterialNumberPicker:1.1.0"
+}
+
+
+apply plugin: 'com.google.gms.google-services'

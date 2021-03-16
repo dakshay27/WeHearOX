@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical"
+    tools:context=".DeviceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/custom_toolbar_available_devices"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="6.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/img_connect_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/circle_colored" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2.5"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="Connecting to your device"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/pink"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_connect_to_handset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_gravity=""
+                        android:layout_weight="0.25"
+                        android:src="@drawable/circle_colored" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/img_registration_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/circle_pink" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2.5"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="Registering your device to cloud."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/pink"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <ImageView
+                        android:id="@+id/img_registration_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_weight="0.25"
+                        android:src="@drawable/circle_pink" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="30dp"
+                        android:layout_weight="2.5"
+                        android:fontFamily="@font/metropolis_medium"
+                        android:text="Registration completed…!"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/pink"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner_button"
+                android:text="Getting any troubles" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
